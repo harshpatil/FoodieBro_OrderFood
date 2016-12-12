@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FoodieBro</string>
+    <string name="Enter_Qty">Enter Qty : </string>
+    <string name="NumberOnly">Number Only</string>
+    <string name="ItemsInCart">Cart</string>
+    <string name="PlaceOderButton">Place Order</string>
+    <string name="TotalAmount">Total Amount = $0.0</string>
+    <string name="Menu">Menu</string>
+    <string name="History">Your Orders</string>
+    <string name="ItemDetailsPage">Dish Details</string>
+    <string name="SaveAndReturnToMainPage">Save Qty And Return</string>
+    <string name="YourPastOrders">Your Past Orders</string>
+    <string name="BackToMainPage">Back</string>
+    <string name="AddQty">">"</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="3dp"
+    >
+
+    <TextView
+        android:id="@+id/itemQtyAndPrice"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:paddingLeft="5dp"
+        android:paddingBottom="15dp"
+        android:textColor="#F000"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignBottom="@+id/dishImage"
+        android:layout_toRightOf="@+id/dishImage"
+        android:layout_toEndOf="@+id/dishImage" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:paddingTop="20dp"
+        android:textColor="#F000"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:textAlignment="center"
+        android:scaleType="fitCenter"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/itemQtyAndPrice"
+        android:layout_toRightOf="@id/dishImage"
+        android:layout_toEndOf="@id/dishImage" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/dishImage"
+        android:layout_toRightOf="@+id/itemNumber"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/itemNumber"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:paddingTop="35dp"
+        android:paddingBottom="10dp"
+        android:textColor="#F000"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:scaleType="center"
+        />
+
+    <Button
+        android:id="@+id/detailsButtonHomePage"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:text="@string/AddQty"
+        android:textSize="25dp"
+        android:background="@color/lightGreen"
+        android:textColor="@color/White"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <!--<CheckBox-->
+        <!--android:layout_width="75dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:paddingTop="50dp"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:fadingEdge="vertical"-->
+        <!--android:id="@+id/checkBox"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:focusable="false"-->
+        <!--/>-->
+</RelativeLayout>

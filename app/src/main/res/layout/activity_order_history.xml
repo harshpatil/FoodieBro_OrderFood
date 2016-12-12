@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/OrderSummary"
+        android:text="@string/YourPastOrders"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="13dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/lightGreen"
+        />
+
+    <fragment android:name="com.cs442.hpatil2.orderfood_foodiebro.orderHistory.OrderHistoryFragment"
+        android:id="@+id/OrderHistoryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <Button
+        android:id="@+id/BackButtonHistoryPage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/BackToMainPage"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@color/lightGreen"
+        />
+</LinearLayout>

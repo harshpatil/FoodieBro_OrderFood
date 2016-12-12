@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/Menu"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="50dp"
+                android:text="@string/Menu"
+                android:textAlignment="center"
+                android:background="@color/lightGreen"
+                android:textColor="@color/White"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="@string/History"
+                android:textAlignment="center"
+                android:background="@color/lightGreen"
+                android:textColor="@color/White"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/listLayout"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_height="match_parent">
+
+            <fragment android:name="com.cs442.hpatil2.orderfood_foodiebro.homePage.MenuListFragment"
+                android:id="@+id/MenuListFragment"
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment android:name="com.cs442.hpatil2.orderfood_foodiebro.calculateTotal.TotalPriceFragment"
+                android:id="@+id/PlaceOrderFragment"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment android:name="com.cs442.hpatil2.orderfood_foodiebro.productPage.ItemDetailsFragment"
+        android:id="@+id/ItemDetailsFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/listLayout"/>
+</LinearLayout>
+
+
