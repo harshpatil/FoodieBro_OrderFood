@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Created by HarshPatil on 10/2/16.
  */
 /*
- * This Activity will started to calculate Total amount and return value
+ * This Activity will be started to calculate Total amount and return value
  */
 public class CalculateTotalActivity extends Activity {
 
